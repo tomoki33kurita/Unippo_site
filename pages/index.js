@@ -5,7 +5,7 @@ import PostBody from 'components/post-body'
 import SectionBody from 'components/section-body'
 import IconHedding from 'components/icon-hedding'
 import Image from 'next/image'
-import eyecatch from 'images/testimg_001.png'
+import eyecatch from 'images/top_01.jpg'
 import styles from 'styles/index.module.css'
 import Button from 'components/button'
 import Grid from 'components/grid'
@@ -21,6 +21,8 @@ export default function Home() {
           alt=""
           layout="responsive"
           sizes="100vw"
+          height={700}
+          objectFit='cover'
           placeholder='blur'
           style={{ transition: '0.2s' }}
         />
@@ -53,7 +55,7 @@ export default function Home() {
           <Card title='学校外フリースクール' innerOn>
             学校施設を利用し安全で<br />豊かな放課後をつくる
           </Card>
-          <Card title='学校外フリースクール' innerOn>
+          <Card title='学校外フリースクール' img='/card_02.jpg' innerOn>
             学校施設を利用し安全で<br />豊かな放課後をつくる
           </Card>
         </Grid>

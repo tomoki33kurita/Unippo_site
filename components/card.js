@@ -2,13 +2,13 @@ import styles from 'styles/card.module.css'
 import Image from 'next/image'
 import Button from 'components/button'
 
-export default function Card({ children, title='寄付による支援', circleOn=false, innerOn=false }) {
+export default function Card({ children, title='寄付による支援', img='/card_01.jpg', innerOn=false }) {
   return (
     <div className={innerOn ? styles.altCard : styles.card}>
       {innerOn ? '' : <h3 className={styles.title}>{title}</h3>}
       <figure className={innerOn ? styles.altCardImg : styles.cardImg}>
         <Image
-          src='/testimg_001.png'
+          src={img}
           alt=""
           layout='fill'
           objectFit='cover'
