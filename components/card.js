@@ -6,7 +6,7 @@ export default function Card({ children, title='寄付による支援', circleOn
   return (
     <div className={innerOn ? styles.altCard : styles.card}>
       {innerOn ? '' : <h3 className={styles.title}>{title}</h3>}
-      <figure className={circleOn ? styles.circleImg : styles.cardImg}>
+      <figure className={innerOn ? styles.altCardImg : styles.cardImg}>
         <Image
           src='/testimg_001.png'
           alt=""
@@ -14,9 +14,11 @@ export default function Card({ children, title='寄付による支援', circleOn
           objectFit='cover'
         />
       </figure>
-      <div className={innerOn ? styles.innerDesctiption : styles.description}>{children}</div>
-      {innerOn ? <h3 className={innerOn ? styles.innerTitle : styles.title}>{title}</h3> : ''}
-      {innerOn ? <Button altColor>詳しく見る</Button> : <Button>詳しく見る</Button>}
+      <div className={[styles.cardInner,innerOn ? styles.gray : ''].join(' ')}>
+        <div className={innerOn ? styles.innerDesctiption : styles.description}>{children}</div>
+        {innerOn ? <h3 className={innerOn ? styles.innerTitle : styles.title}>{title}</h3> : ''}
+        {innerOn ? <Button altColor>詳しく見る</Button> : <Button>詳しく見る</Button>}
+      </div>
     </div>
   )
 }

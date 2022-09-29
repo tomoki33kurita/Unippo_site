@@ -7,9 +7,9 @@
 }
 .altCard {
   composes: card;
-  background-color: var(--gray-10);
+  width: 350px;
+  margin: 0 auto;
   padding: 0;
-  padding-bottom: var(--space-xs);
 }
 
 .altCard img {
@@ -19,7 +19,20 @@
 .cardImg {
   position: relative;
   width: 100%;
-  height: 200px;
+  height: 180px;
+}
+
+.altCardImg {
+  composes: cardImg;
+  clip-path: polygon(50% 0%, 100% 40%, 100% 100%, 0 100%, 0 40%);
+}
+
+.cardInner {
+  padding-top: calc(var(--space-xs));
+  padding-bottom: var(--space-xs);
+}
+.gray {
+  background-color: var(--gray-10);
 }
 
 .title {
@@ -34,10 +47,9 @@
 
 .description {
   font-size: calc(var(--body) * 0.8);
-  margin: calc(var(--space-xs) * 0.8) 0;
+  margin-bottom: calc(var(--space-xs) * 0.8);
 }
 
 .innerDesctiption {
   font-size: calc(var(--body) * 0.8);
-  margin-top: calc(var(--space-xs));
 }
