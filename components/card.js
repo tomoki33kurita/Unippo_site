@@ -7,12 +7,23 @@ export default function Card({ children, title='寄付による支援', img='/ca
     <div className={innerOn ? styles.altCard : styles.card}>
       {innerOn ? '' : <h3 className={styles.title}>{title}</h3>}
       <figure className={innerOn ? styles.altCardImg : styles.cardImg}>
-        <Image
-          src={img}
-          alt=""
-          layout='fill'
-          objectFit='cover'
-        />
+        {innerOn ?
+          <Image
+            src={img}
+            alt=""
+            layout='fill'
+            objectFit='cover'
+          /> :
+          <Image
+            src={img}
+            alt=""
+            layout="responsive"
+            sizes="100%"
+            width={400}
+            height={240}
+            objectFit='contain'
+          />
+        }
       </figure>
       <div className={[styles.cardInner,innerOn ? styles.gray : ''].join(' ')}>
         <div className={innerOn ? styles.innerDesctiption : styles.description}>{children}</div>

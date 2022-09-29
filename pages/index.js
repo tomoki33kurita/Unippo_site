@@ -80,10 +80,10 @@ export default function Home() {
           子どもたちの学び場の選択肢を増やすために、皆様のお力をお貸し下さい。
         </SectionBody>
         <Grid rows='grid2'>
-          <Card>
+          <Card img='/assets_01.png'>
             皆様からのご支援が子どもたちの笑顔を<br />生み出します。<br />応援をよろしくお願いいたします。
           </Card>
-          <Card title='スタッフとして支援'>
+          <Card title='スタッフとして支援' img='/assets_05.png'>
             皆様からのご支援が子どもたちの笑顔を<br />生み出します。<br />応援をよろしくお願いいたします。
           </Card>
         </Grid>

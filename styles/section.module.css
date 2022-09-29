@@ -24,7 +24,7 @@
 .bgImg {
   color: var(--white);
   height: 700px;
-  background-image: url("/testimg_001.png");
+  background-image: url("/bgimg.JPG");
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
