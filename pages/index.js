@@ -55,7 +55,7 @@ export default function Home() {
           <Card title='学校外フリースクール' innerOn>
             学校施設を利用し安全で<br />豊かな放課後をつくる
           </Card>
-          <Card title='学校外フリースクール' img='/card_02.jpg' innerOn>
+          <Card title='学校外フリースクール' img='/card_02.JPG' innerOn>
             学校施設を利用し安全で<br />豊かな放課後をつくる
           </Card>
         </Grid>
