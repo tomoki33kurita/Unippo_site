@@ -8,7 +8,7 @@ export default function Card({ children, title='寄付による支援', circleOn
       {innerOn ? '' : <h3 className={styles.title}>{title}</h3>}
       <figure className={circleOn ? styles.circleImg : styles.cardImg}>
         <Image
-          src='/eyecatch_001.jpg'
+          src='/testimg_001.png'
           alt=""
           layout='fill'
           objectFit='cover'

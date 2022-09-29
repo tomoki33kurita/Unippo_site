@@ -6,7 +6,7 @@ export default function Box({ children, circleOn=false, centerOn=false }) {
     <div className={styles.box}>
       <figure className={circleOn ? styles.circleImg : styles.boxImg}>
         <Image
-          src='/eyecatch_001.jpg'
+          src='/testimg_001.png'
           alt=""
           layout='fill'
           objectFit='cover'
