@@ -1,0 +1,135 @@
+.lineUpContainer {
+  composes: lineUpCenter from 'styles/utils.module.css';
+  margin-bottom: var(--space-xs);
+}
+
+.h2Line {
+  position: relative;
+  display: inline-block;
+  padding: 0 0.5rem;
+}
+
+.yellowLine {
+  composes: h2Line;
+  
+}
+.yellowLine:before {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 40px;
+  height: 30px;
+  background-image: url(/flag_yellow.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  bottom: 0;
+  left: -40px;
+}
+.yellowLine:after {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 100%;
+  border-bottom: solid 5px var(--accent-yellow);
+  bottom: 0;
+  left: 0;
+}
+
+.blueLine {
+  composes: h2Line;
+}
+.blueLine:before {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 40px;
+  height: 30px;
+  background-image: url(/flag_blue.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  bottom: 0;
+  left: -40px;
+}
+.blueLine:after {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 100%;
+  border-bottom: solid 5px var(--accent-blue);
+  bottom: 0;
+  left: 0;
+}
+
+.redLine {
+  composes: h2Line;
+}
+.redLine:before {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 40px;
+  height: 30px;
+  background-image: url(/flag_red.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  bottom: 0;
+  left: -40px;
+}
+.redLine:after {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 100%;
+  border-bottom: solid 5px var(--accent-red);
+  bottom: 0;
+  left: 0;
+}
+
+.yellow {
+  composes: h2Line;
+  
+}
+.yellow:before {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 40px;
+  height: 30px;
+  background-image: url(/flag_yellow.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  bottom: 5px;
+  left: -40px;
+}
+
+.blue {
+  composes: h2Line;
+}
+.blue:before {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 40px;
+  height: 30px;
+  background-image: url(/flag_blue.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  bottom: 5px;
+  left: -40px;
+}
+
+.red {
+  composes: h2Line;
+}
+.red:before {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 40px;
+  height: 30px;
+  background-image: url(/flag_red.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  bottom: 5px;
+  left: -40px;
+}

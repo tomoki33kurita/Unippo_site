@@ -1,0 +1,34 @@
+.btn {
+  display: inline-block;
+  color: #fff;
+  padding: calc(var(--body) * 0.3) calc(var(--space-xs) * 0.7);
+  text-decoration: none;
+  border-radius: 40px;
+  border: solid calc(var(--body) * 0.15) #5B5759;
+  background-color: var(--green);
+}
+
+.altBtn {
+  composes: btn;
+  background-color: var(--orange);
+}
+
+.btnLarge {
+  composes: btn;
+  padding: calc(var(--body) * 0.5) var(--space-lg);
+}
+
+.squareBtn {
+  composes: btn;
+  width: 200px;
+  border-radius: 7px;
+  padding: calc(var(--body) * 0.3) 0;
+}
+
+.rightSide {
+  text-align: right;
+}
+
+.centered {
+  text-align: center;
+}

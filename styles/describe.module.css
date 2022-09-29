@@ -1,0 +1,19 @@
+.imgBox {
+  position: relative;
+  overflow: hidden
+}
+
+.textBox {
+  background-color: var(--white);
+  padding: var(--space-xs);
+}
+
+.leftRadius {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.rightRadius {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
