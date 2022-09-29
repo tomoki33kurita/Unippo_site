@@ -2,7 +2,7 @@ import styles from 'styles/card.module.css'
 import Image from 'next/image'
 import Button from 'components/button'
 
-export default function Card({ children, title='寄付による支援', img='/card_01.jpg', innerOn=false }) {
+export default function Card({ children, title='寄付による支援', img='/card_01.JPG', innerOn=false }) {
   return (
     <div className={innerOn ? styles.altCard : styles.card}>
       {innerOn ? '' : <h3 className={styles.title}>{title}</h3>}
