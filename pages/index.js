@@ -44,9 +44,7 @@ export default function Home() {
           <Box flagOn>【イベント開催】7/14(木)開催！教室開放「すきなことをシェアしよう」</Box>
           <Box flagOn>【イベント開催】7/14(木)開催！教室開放「すきなことをシェアしよう」</Box>
         </Grid>
-        <div style={{marginRight:'calc(var(--space-xs) * 0.5)'}}>
-          <Button rightOn>お知らせ一覧</Button>
-        </div>
+        <Button rightOn>お知らせ一覧</Button>
       </Section>
       <Section>
         <IconHedding color='yellow'>活動の内容</IconHedding>
@@ -72,9 +70,7 @@ export default function Home() {
           <Box>【イベント開催】7/14(木)開催！教室開放「すきなことをシェアしよう」</Box>
           <Box>【イベント開催】7/14(木)開催！教室開放「すきなことをシェアしよう」</Box>
         </Grid>
-        <div style={{marginRight:'calc(var(--space-xs) * 0.5)'}}>
-          <Button bars rightOn>コラム一覧</Button>
-        </div>
+        <Button bars rightOn>コラム一覧</Button>
       </Section>
       <Section fullWidth color='bgImg'>
         <IconHedding color='blue' borderOff>サポーターになる</IconHedding>

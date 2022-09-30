@@ -12,6 +12,7 @@ import Grid from 'components/grid'
 import Box from 'components/box'
 import Card from 'components/card'
 import Describe from 'components/describe'
+import Column from 'components/column'
 
 export default function Activity() {
   return (
@@ -32,7 +33,7 @@ export default function Activity() {
       </div>
       <Section>
         <SectionBody>
-        <h2 style={{textAlign:'center'}}>「居心地の良い場所」が学びの場となるように</h2>
+        <h2 style={{textAlign:'center'}}>「居心地の良い場所」が<br className={styles.brMb} />学びの場となるように</h2>
           <div style={{marginTop:'calc(var(--space-xs))'}}>
             <Grid rows='grid2'>
               <div style={{textAlign:'left',fontSize:'calc(var(--body)*0.9)'}}>
@@ -56,13 +57,13 @@ export default function Activity() {
       </Section>
       <Section fullWidth>
         <IconHedding color='blue' borderOff>学校外フリースクール</IconHedding>
-        <div style={{backgroundColor:'var(--white)',padding:'var(--space-xs)',borderRadius:'20px'}}>
+        <Column>
           <Grid rows='grid3'>
-            <Card basicStyle title='安全と安心'>子どもたちが心理的・肉体的に安全が保たれている状況で過ごせることが何よりも大切だと考えています。そのための空間づくり、スタッフの接し方、プログラムづくりを意識しています。</Card>
-            <Card basicStyle title='学び手主体の学習'>学びの主体をいつも子どもたちにおくようにしています。プログラムを準備したとしても、それに必ず参加しなければいけないわけではなく、あくまでも子どもたちの意思による選択を尊重しています。</Card>
-            <Card basicStyle title='自信になる体験'>子どもたちが自らの意思で緒戦したことがらに、成果と過程を通して、子どもたちが自分に自信をつけられる体験ができるように意識をしています。</Card>
+            <Card basicStyle title='安全と安心' img='/card_07.JPG'>子どもたちが心理的・肉体的に安全が保たれている状況で過ごせることが何よりも大切だと考えています。そのための空間づくり、スタッフの接し方、プログラムづくりを意識しています。</Card>
+            <Card basicStyle title='学び手主体の学習' img='/card_09.JPG'>学びの主体をいつも子どもたちにおくようにしています。プログラムを準備したとしても、それに必ず参加しなければいけないわけではなく、あくまでも子どもたちの意思による選択を尊重しています。</Card>
+            <Card basicStyle title='自信になる体験' img='/card_10.JPG'>子どもたちが自らの意思で緒戦したことがらに、成果と過程を通して、子どもたちが自分に自信をつけられる体験ができるように意識をしています。</Card>
           </Grid>
-        </div>
+        </Column>
         <Button link='/' rightOn>学校関係者の方々へ</Button>
       </Section>
       <Section fullWidth color='gray'>

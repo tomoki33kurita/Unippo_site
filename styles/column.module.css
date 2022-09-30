@@ -1,0 +1,13 @@
+.basic {
+  background-color: var(--white);
+  padding: var(--space-xs);
+  border-radius: 20px;
+  margin-bottom: var(--space-xs);
+}
+@media (max-width: 767px) {
+  .basic {
+    max-width: 320px;
+    margin: 0 auto;
+    margin-bottom: var(--space-xs);
+  }
+}

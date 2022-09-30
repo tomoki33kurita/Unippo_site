@@ -17,6 +17,9 @@
   .card {
     margin: calc(var(--space-xs) * 0.5) auto;
   }
+  .basic {
+    margin-bottom: var(--space-sm);
+  }
 }
 .altCard {
   composes: card;
@@ -27,10 +30,16 @@
   border-bottom: solid 4px var(--green) !important;
 }
 
-.cardImg {
+.card .cardImg {
   position: relative;
   width: 100%;
   height: 180px;
+}
+
+.basic .cardImg {
+  position: relative;
+  width: 100%;
+  height: 120px;
 }
 
 .altCardImg {
@@ -41,14 +50,23 @@
 .cardInner {
   padding-top: calc(var(--space-xs));
 }
+.basic .cardInner {
+  padding-top: calc(var(--space-xs)*0.5);
+}
 .gray {
   background-color: var(--gray-10);
   padding-bottom: var(--space-xs);
 }
 
-.title {
+.card .title {
   font-weight: 400;
   margin-bottom: calc(var(--space-xs) * 0.8);
+}
+
+.basic .title {
+  font-size: calc(var(--heading3)*0.9);
+  font-weight: 400;
+  margin-bottom: calc(var(--space-xs) * 0.4);
 }
 
 .innerTitle {
@@ -63,4 +81,7 @@
 
 .innerDesctiption {
   font-size: calc(var(--body) * 0.8);
+}
+.basic .innerDesctiption {
+  text-align: left;
 }

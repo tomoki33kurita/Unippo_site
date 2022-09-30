@@ -53,7 +53,7 @@ export default function About() {
       </Section>
       <Section fullWidth>
         <IconHedding color='blue' borderOff>私たちの向き合う社会課題</IconHedding>
-        <SectionBody centerOn>
+        <SectionBody centerOn color='blue'>
           学校に行きたくない子たちの<br className={styles.brMb} />学び場の選択肢の不足
         </SectionBody>
         <Grid rows = 'grid2'>
@@ -85,8 +85,8 @@ export default function About() {
       </Section>
       <Section fullWidth color='green'>
         <IconHedding color='red' borderOff>私たちのミッション</IconHedding>
-        <SectionBody centerOn>
-          学校に行きたくない子たちの学び場の選択肢の不足
+        <SectionBody centerOn color='red'>
+          居心地の良い学びの場をつくる
         </SectionBody>
         <Grid rows = 'grid2'>
           <Describe imgOn img='/card_04.JPG' radiusOn>
@@ -117,7 +117,7 @@ export default function About() {
       </Section>
       <Section fullWidth color='red'>
         <IconHedding color='yellow' borderOff>私たちのビジョン</IconHedding>
-        <SectionBody centerOn>
+        <SectionBody centerOn color='yellow'>
           誰もが自分らしく学べる社会に
         </SectionBody>
         <div style={{maxWidth:'600px',margin:'0 auto'}}>
