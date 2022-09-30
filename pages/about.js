@@ -54,7 +54,7 @@ export default function About() {
       <Section fullWidth>
         <IconHedding color='blue' borderOff>私たちの向き合う社会課題</IconHedding>
         <SectionBody centerOn>
-          学校に行きたくない子たちの学び場の選択肢の不足
+          学校に行きたくない子たちの<br className={styles.brMb} />学び場の選択肢の不足
         </SectionBody>
         <Grid rows = 'grid2'>
           <Describe imgOn img='/card_03.JPG' radiusOn>

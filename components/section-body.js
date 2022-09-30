@@ -5,7 +5,7 @@ export default function SectionBody({ children, centerOn = false }) {
     return (
       <div className={styles.lineUpContainer}>
         <p className={styles.messages}>
-          {children}
+          <span>{children}</span>
         </p>
       </div>
     )
