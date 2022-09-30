@@ -16,9 +16,14 @@
   bottom: 0;
   background-color: rgba(0,0,0,0.3);
 }
-
+.h2Responsive {
+  text-align: center;
+}
 @media (min-width: 768px) {
   .brMb {
     display: none;
+  }
+  .h2Responsive {
+    text-align: left;
   }
 }

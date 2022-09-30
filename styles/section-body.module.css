@@ -19,9 +19,12 @@
   padding: 0 0.5rem;
   margin-bottom: 0;
 }
-.messages span {
-  padding: 0 1rem;
+@media (min-width: 768px) {
+  .messages span {
+    padding: 0 1rem;
+  }
 }
+
 .blue span {
   border-bottom: solid calc(var(--space-xs)/6) var(--accent-blue);
   /*

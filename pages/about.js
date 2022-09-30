@@ -34,7 +34,7 @@ export default function About() {
         <SectionBody>
           <div style={{marginBottom:'calc(var(--space-xs)*0.7)'}}>
             <Grid rows='grid2'>
-              <h2 style={{textAlign:'left'}}>すべての子どもたちが<br />自分らしい一歩を<br />踏み出せるように</h2>
+              <h2 className={styles.h2Responsive}>すべての子どもたちが<br />自分らしい一歩を<br />踏み出せるように</h2>
               <figure className=''>
                 <Image
                   src='/assets_04.png'
@@ -48,7 +48,10 @@ export default function About() {
               </figure>
             </Grid>
           </div>
-          私たちは学校に行きたくない子どもたちに、居心地の良い学びの場を提供する活動をしています。たとえ学校の学びのスタイルが合わなくても、誰もが自分らしく学び、成長していくことができるように。Unippoという名前には「子どもたちにユニークな一歩を踏み出してほしい」という願いが込められています。
+          <div style={{fontSize:'calc(var(--body)*0.9)'}}>
+            私たちは学校に行きたくない子どもたちに、居心地の良い学びの場を提供する活動をしています。たとえ学校の学びのスタイルが合わなくても、誰もが自分らしく学び、成長していくことができるように。<br /><br />
+            Unippoという名前には「子どもたちにユニークな一歩を踏み出してほしい」という願いが込められています。
+          </div>
         </SectionBody>
       </Section>
       <Section fullWidth>
@@ -86,7 +89,7 @@ export default function About() {
       <Section fullWidth color='green'>
         <IconHedding color='red' borderOff>私たちのミッション</IconHedding>
         <SectionBody centerOn color='red'>
-          居心地の良い学びの場をつくる
+          居心地の良い<br className={styles.brMb} />学びの場をつくる
         </SectionBody>
         <Grid rows = 'grid2'>
           <Describe imgOn img='/card_04.JPG' radiusOn>
@@ -118,7 +121,7 @@ export default function About() {
       <Section fullWidth color='red'>
         <IconHedding color='yellow' borderOff>私たちのビジョン</IconHedding>
         <SectionBody centerOn color='yellow'>
-          誰もが自分らしく学べる社会に
+          誰もが自分らしく<br className={styles.brMb} />学べる社会に
         </SectionBody>
         <div style={{maxWidth:'600px',margin:'0 auto'}}>
           <figure style={{width:'100%',height:'200px',position:'relative'}}>
