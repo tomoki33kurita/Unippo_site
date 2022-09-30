@@ -23,7 +23,7 @@
   padding: 0 1rem;
 }
 .blue span {
-  border-bottom: solid 5px var(--accent-blue);
+  border-bottom: solid calc(var(--space-xs)/6) var(--accent-blue);
   /*
   position: absolute;
   content: '';
@@ -35,11 +35,11 @@
   */
 }
 .red span {
-  border-bottom: solid 5px var(--red);
+  border-bottom: solid calc(var(--space-xs)/6) var(--red);
 }
 .yellow span {
-  border-bottom: solid 5px var(--yellow);
+  border-bottom: solid calc(var(--space-xs)/6) var(--yellow);
 }
 .green span {
-  border-bottom: solid 5px var(--green);
+  border-bottom: solid calc(var(--space-xs)/6) var(--green);
 }

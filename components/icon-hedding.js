@@ -7,7 +7,7 @@ import yflag from 'images/flag_yellow.svg'
 export default function IconHedding({ children, color='blue', borderOff = false }) {
   return (
     <div className={styles.lineUpContainer}>
-      <h2 className={borderOff ? styles[`${color}`] : styles[`${color}Line`]}>
+      <h2 className={borderOff ? styles[color] : styles[`${color}Line`]}>
         {children}
       </h2>
     </div>

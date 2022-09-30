@@ -1,14 +1,15 @@
 .box {
-  margin: calc(var(--space-xs) * 0.5);
+
 }
 .flagImg {
   position: relative;
   width: 100%;
-  height: 120px;
+  height: 130px;
+  /*clip-path: url(#clipshape);*/
   mask-image: url("/flag_mask.svg");
   mask-repeat: no-repeat;
-  mask-position: 0 0;
-  mask-size: 100%;
+  mask-position: auto;
+  mask-size: contain;
 }
 .boxImg {
   position: relative;

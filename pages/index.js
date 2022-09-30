@@ -38,11 +38,11 @@ export default function Home() {
       </Section>
       <Section fullWidth>
         <IconHedding color='blue'>お知らせ</IconHedding>
-        <Grid rows = 'grid4'>
-          <Box flagOn>【イベント開催】7/14(木)開催！教室開放「すきなことをシェアしよう」</Box>
-          <Box flagOn>【イベント開催】7/14(木)開催！教室開放「すきなことをシェアしよう」</Box>
-          <Box flagOn>【イベント開催】7/14(木)開催！教室開放「すきなことをシェアしよう」</Box>
-          <Box flagOn>【イベント開催】7/14(木)開催！教室開放「すきなことをシェアしよう」</Box>
+        <Grid rows = 'grid4' gap='var(--space-xs)'>
+          <Box flagOn img='/card_10.JPG'>【イベント開催】7/14(木)開催！教室開放「すきなことをシェアしよう」</Box>
+          <Box flagOn img='/card_09.JPG'>【イベント開催】7/14(木)開催！教室開放「すきなことをシェアしよう」</Box>
+          <Box flagOn img='/card_08.JPG'>【イベント開催】7/14(木)開催！教室開放「すきなことをシェアしよう」</Box>
+          <Box flagOn img='/card_07.JPG'>【イベント開催】7/14(木)開催！教室開放「すきなことをシェアしよう」</Box>
         </Grid>
         <Button rightOn>お知らせ一覧</Button>
       </Section>
@@ -65,10 +65,10 @@ export default function Home() {
         <SectionBody>
           Unippoという名前には「子どもたちにユニークな一歩を踏み出してほしい」という願いが込められています。一人ひとりがもっている「やってみたい」という小さな心の火を、焦らず大切に育てていきたいと思います。
         </SectionBody>
-        <Grid rows = 'grid3'>
-          <Box>【イベント開催】7/14(木)開催！教室開放「すきなことをシェアしよう」</Box>
-          <Box>【イベント開催】7/14(木)開催！教室開放「すきなことをシェアしよう」</Box>
-          <Box>【イベント開催】7/14(木)開催！教室開放「すきなことをシェアしよう」</Box>
+        <Grid rows = 'grid3' gap='var(--space-xs)'>
+          <Box img='/card_06.JPG'>【イベント開催】7/14(木)開催！教室開放「すきなことをシェアしよう」</Box>
+          <Box img='/card_05.JPG'>【イベント開催】7/14(木)開催！教室開放「すきなことをシェアしよう」</Box>
+          <Box img='/card_04.JPG'>【イベント開催】7/14(木)開催！教室開放「すきなことをシェアしよう」</Box>
         </Grid>
         <Button bars rightOn>コラム一覧</Button>
       </Section>

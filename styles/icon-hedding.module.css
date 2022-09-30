@@ -30,7 +30,7 @@
   content: '';
   display: block;
   width: 100%;
-  border-bottom: solid 5px var(--accent-yellow);
+  border-bottom: solid calc(var(--space-xs)/6) var(--accent-yellow);
   bottom: 0;
   left: 0;
 }
@@ -55,7 +55,7 @@
   content: '';
   display: block;
   width: 100%;
-  border-bottom: solid 5px var(--accent-blue);
+  border-bottom: solid calc(var(--space-xs)/6) var(--accent-blue);
   bottom: 0;
   left: 0;
 }
@@ -80,7 +80,7 @@
   content: '';
   display: block;
   width: 100%;
-  border-bottom: solid 5px var(--accent-red);
+  border-bottom: solid calc(var(--space-xs)/6) var(--accent-red);
   bottom: 0;
   left: 0;
 }

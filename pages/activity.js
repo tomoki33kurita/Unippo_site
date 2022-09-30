@@ -54,7 +54,7 @@ export default function Activity() {
             </Grid>
           </div>
         </SectionBody>
-        <Grid rows='grid2'>
+        <Grid rows='grid2' gap='var(--space-sm)'>
           <div style={{backgroundColor:'var(--accent-yellow)',padding:'var(--space-xs)'}}>
             <Card basicStyle title='学校内フリースクール' img='/card_01.JPG'>学校には行きたいけど、教室に行くことに難しさを感じる子どもたち向けに、学校と連携し校内にフリースクールを運営しています。この場所では教科学習以外にも様々なアクティビティーに挑戦しています。</Card>
           </div>
