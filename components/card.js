@@ -18,7 +18,7 @@ export default function Card({ children, title='寄付による支援', img='/ca
             src={img}
             alt=""
             layout="responsive"
-            sizes="100%"
+            sizes="100vw"
             width={400}
             height={240}
             objectFit='contain'

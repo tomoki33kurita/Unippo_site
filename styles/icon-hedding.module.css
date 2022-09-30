@@ -13,7 +13,7 @@
   composes: h2Line;
   
 }
-.yellowLine:before {
+.yellowLine::before {
   position: absolute;
   content: '';
   display: block;
@@ -25,7 +25,7 @@
   bottom: 0;
   left: -40px;
 }
-.yellowLine:after {
+.yellowLine::after {
   position: absolute;
   content: '';
   display: block;
@@ -38,7 +38,7 @@
 .blueLine {
   composes: h2Line;
 }
-.blueLine:before {
+.blueLine::before {
   position: absolute;
   content: '';
   display: block;
@@ -50,7 +50,7 @@
   bottom: 0;
   left: -40px;
 }
-.blueLine:after {
+.blueLine::after {
   position: absolute;
   content: '';
   display: block;
@@ -63,7 +63,7 @@
 .redLine {
   composes: h2Line;
 }
-.redLine:before {
+.redLine::before {
   position: absolute;
   content: '';
   display: block;
@@ -75,7 +75,7 @@
   bottom: 0;
   left: -40px;
 }
-.redLine:after {
+.redLine::after {
   position: absolute;
   content: '';
   display: block;
@@ -89,7 +89,7 @@
   composes: h2Line;
   
 }
-.yellow:before {
+.yellow::before {
   position: absolute;
   content: '';
   display: block;
@@ -105,7 +105,7 @@
 .blue {
   composes: h2Line;
 }
-.blue:before {
+.blue::before {
   position: absolute;
   content: '';
   display: block;
@@ -121,7 +121,7 @@
 .red {
   composes: h2Line;
 }
-.red:before {
+.red::before {
   position: absolute;
   content: '';
   display: block;

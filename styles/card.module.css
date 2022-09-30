@@ -1,14 +1,14 @@
 .card {
-  margin: calc(var(--space-xs) * 0.5);
+  width: 320px;
+  margin: calc(var(--space-xs) * 0.5) auto;
   padding: var(--space-xs);
   background-color: var(--white);
   color: var(--black);
   border-radius: 7px;
+  text-align: center;
 }
 .altCard {
   composes: card;
-  width: 350px;
-  margin: 0 auto;
   padding: 0;
 }
 

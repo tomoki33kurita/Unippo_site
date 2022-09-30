@@ -37,10 +37,10 @@ export default function Home() {
       <Section fullWidth>
         <IconHedding color='blue'>お知らせ</IconHedding>
         <Grid rows = 'grid4'>
-          <Box>【イベント開催】7/14(木)開催！教室開放「すきなことをシェアしよう」</Box>
-          <Box>【イベント開催】7/14(木)開催！教室開放「すきなことをシェアしよう」</Box>
-          <Box>【イベント開催】7/14(木)開催！教室開放「すきなことをシェアしよう」</Box>
-          <Box>【イベント開催】7/14(木)開催！教室開放「すきなことをシェアしよう」</Box>
+          <Box flagOn>【イベント開催】7/14(木)開催！教室開放「すきなことをシェアしよう」</Box>
+          <Box flagOn>【イベント開催】7/14(木)開催！教室開放「すきなことをシェアしよう」</Box>
+          <Box flagOn>【イベント開催】7/14(木)開催！教室開放「すきなことをシェアしよう」</Box>
+          <Box flagOn>【イベント開催】7/14(木)開催！教室開放「すきなことをシェアしよう」</Box>
         </Grid>
         <div style={{marginRight:'calc(var(--space-xs) * 0.5)'}}>
           <Button rightOn>お知らせ一覧</Button>
@@ -76,9 +76,9 @@ export default function Home() {
       </Section>
       <Section fullWidth color='bgImg'>
         <IconHedding color='blue'>サポーターになる</IconHedding>
-        <SectionBody>
+        <p style={{textAlign: 'center'}}>
           子どもたちの学び場の選択肢を増やすために、皆様のお力をお貸し下さい。
-        </SectionBody>
+        </p>
         <Grid rows='grid2'>
           <Card img='/assets_01.png'>
             皆様からのご支援が子どもたちの笑顔を<br />生み出します。<br />応援をよろしくお願いいたします。

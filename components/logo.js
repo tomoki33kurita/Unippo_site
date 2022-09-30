@@ -14,6 +14,7 @@ export default function Logo({ boxOn = false }) {
             width={500}
             height={121}
           />
+          <span className='sr-only'>Unippo</span>
         </a>
       </Link>
     </div>
