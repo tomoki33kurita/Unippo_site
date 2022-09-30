@@ -36,7 +36,7 @@ export default function Activity() {
         <h2 style={{textAlign:'center'}}>「居心地の良い場所」が<br className={styles.brMb} />学びの場となるように</h2>
           <div style={{marginTop:'calc(var(--space-xs))'}}>
             <Grid rows='grid2'>
-              <div style={{textAlign:'left',fontSize:'calc(var(--body)*0.9)'}}>
+              <div style={{textAlign:'left',fontSize:'calc(var(--body))'}}>
                 私達は子どもたちにとって居心地の良い場所が学びの場所となれるように活動をしています。
                 平日の日中に学校の外で過ごせる学びの場と、学校の中で教室以外の場所で過ごせる学びの場を運営しています。
               </div>

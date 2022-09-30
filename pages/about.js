@@ -48,7 +48,7 @@ export default function About() {
               </figure>
             </Grid>
           </div>
-          <div style={{fontSize:'calc(var(--body)*0.9)'}}>
+          <div style={{fontSize:'calc(var(--body))'}}>
             私たちは学校に行きたくない子どもたちに、居心地の良い学びの場を提供する活動をしています。たとえ学校の学びのスタイルが合わなくても、誰もが自分らしく学び、成長していくことができるように。<br /><br />
             Unippoという名前には「子どもたちにユニークな一歩を踏み出してほしい」という願いが込められています。
           </div>
