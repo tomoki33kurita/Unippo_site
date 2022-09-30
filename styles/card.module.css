@@ -6,12 +6,17 @@
 
 .card {
   width: 320px;
-  margin: calc(var(--space-xs) * 0.5) auto;
+  margin: 0 auto;
   padding: var(--space-xs);
   background-color: var(--white);
   color: var(--black);
   border-radius: 7px;
   text-align: center;
+}
+@media (max-width: 767px){
+  .card {
+    margin: calc(var(--space-xs) * 0.5) auto;
+  }
 }
 .altCard {
   composes: card;

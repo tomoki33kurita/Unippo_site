@@ -1,8 +1,3 @@
-.grid2, .grid3, .grid4 {
-  display: grid;
-}
-
-
 
 @media (min-width: 768px) {
   .grid4 {
@@ -23,5 +18,13 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     text-align: center;
+  }
+}
+@media (max-width: 767px) {
+  .grid2, .grid3, .grid4 {
+    display: grid;
+    margin: 0 auto;
+    max-width: 320px;
+
   }
 }
