@@ -54,6 +54,14 @@ export default function Activity() {
             </Grid>
           </div>
         </SectionBody>
+        <Grid rows='grid2'>
+          <div style={{backgroundColor:'var(--accent-yellow)',padding:'var(--space-xs)'}}>
+            <Card basicStyle title='学校内フリースクール' img='/card_01.JPG'>学校には行きたいけど、教室に行くことに難しさを感じる子どもたち向けに、学校と連携し校内にフリースクールを運営しています。この場所では教科学習以外にも様々なアクティビティーに挑戦しています。</Card>
+          </div>
+          <div style={{backgroundColor:'var(--gray-10)',padding:'var(--space-xs)'}}>
+            <Card basicStyle title='学校外フリースクール' img='/card_06.JPG'>学校に行くことに難しさを感じる子どもたち向けに、学校外の施設を利用してフリースクールを運営しています。子どもたち一人ひとりの興味関心に寄り添い、ユニークな一歩を踏み出すことができるようなプログラムを実施しています。</Card>
+          </div>
+        </Grid>
       </Section>
       <Section fullWidth>
         <IconHedding color='blue' borderOff>学校外フリースクール</IconHedding>
