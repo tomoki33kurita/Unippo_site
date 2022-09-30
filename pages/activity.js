@@ -5,7 +5,7 @@ import Section from 'components/section'
 import SectionBody from 'components/section-body'
 import IconHedding from 'components/icon-hedding'
 import Image from 'next/image'
-import eyecatch from 'images/testimg_001.png'
+import eyecatch from 'images/top_02.JPG'
 import styles from 'styles/index.module.css'
 import Button from 'components/button'
 import Grid from 'components/grid'
@@ -16,131 +16,90 @@ import Describe from 'components/describe'
 export default function Activity() {
   return (
     <Container>
-      <figure className={styles.fullWidth}>
-        <Image
-          src={eyecatch}
-          alt=""
-          layout="responsive"
-          sizes="100vw"
-          placeholder='blur'
-          style={{ transition: '0.2s' }}
-        />
-      </figure>
-      <Section>
-        <SectionBody centerOn>
-          「居心地の良い場所」が学びの場となるように
-        </SectionBody>
-        <Grid rows='grid2'>
-          <div>私達は子どもたちにとって居心地の良い場所が学びの場所となれるように活動をしています。平日の日中に学校の外で過ごせる学びの場と、学校の中で教室以外の場所で過ごせる学びの場を運営しています。</div>
-          <div style={{position:'relative'}}>
-            <Image
-              src='/testimg_001.png'
-              alt=""
-              layout='fill'
-              objectFit='cover'
-            />
-          </div>
-        </Grid>
-      </Section>
-      <Section fullWidth>
-        <IconHedding color='blue' borderOff>私たちの向き合う社会課題</IconHedding>
-        <SectionBody centerOn>
-          学校に行きたくない子たちの学び場の選択肢の不足
-        </SectionBody>
-        <Grid rows = 'grid2'>
-          <Describe imgOn img='/testimg_001.png'>
-          </Describe>
-          <Describe>
-            <div>
-              本当は学校に行きたい<br />
-              様々な事情により、学校に行きたくてもいけない子どもたちがたくさんいます。<br />
-              しかし、学校の教室以外の学びの選択肢が不足している現状があります。<br />
-              学校に行けないことで、学びと成長の機会が損なわれてしまうことは、子どもたちの将来に大きな影響を及ぼすことになります。<br />
-            </div>
-          </Describe>
-        </Grid>
-      </Section>
-      <Section>
-        <Grid rows = 'grid2'>
-          <Describe imgOn img='/testimg_001.png'>
-          </Describe>
-          <Describe>
-            <div>
-              本当は学校に行きたい<br />
-              様々な事情により、学校に行きたくてもいけない子どもたちがたくさんいます。<br />
-              しかし、学校の教室以外の学びの選択肢が不足している現状があります。<br />
-              学校に行けないことで、学びと成長の機会が損なわれてしまうことは、子どもたちの将来に大きな影響を及ぼすことになります。<br />
-            </div>
-          </Describe>
-        </Grid>
-      </Section>
-      <Section fullWidth color='green'>
-        <IconHedding color='red' borderOff>私たちのミッション</IconHedding>
-        <SectionBody centerOn>
-          学校に行きたくない子たちの学び場の選択肢の不足
-        </SectionBody>
-        <Grid rows = 'grid2'>
-          <Describe imgOn img='/testimg_001.png'>
-          </Describe>
-          <Describe>
-            <div>
-              安全・安心の確保<br />
-              様々な事情により、学校に行きたくてもいけない子どもたちがたくさんいます。<br />
-              しかし、学校の教室以外の学びの選択肢が不足している現状があります。<br />
-              学校に行けないことで、学びと成長の機会が損なわれてしまうことは、子どもたちの将来に大きな影響を及ぼすことになります。<br />
-            </div>
-          </Describe>
-        </Grid>
-      </Section>
-      <Section>
-        <Grid rows = 'grid2'>
-          <Describe imgOn img='/testimg_001.png'>
-          </Describe>
-          <Describe>
-            <div>
-              本当は学校に行きたい<br />
-              様々な事情により、学校に行きたくてもいけない子どもたちがたくさんいます。<br />
-              しかし、学校の教室以外の学びの選択肢が不足している現状があります。<br />
-              学校に行けないことで、学びと成長の機会が損なわれてしまうことは、子どもたちの将来に大きな影響を及ぼすことになります。<br />
-            </div>
-          </Describe>
-        </Grid>
-      </Section>
-      <Section fullWidth color='red'>
-        <IconHedding color='yellow' borderOff>私たちのビジョン</IconHedding>
-        <SectionBody centerOn>
-          誰もが自分らしく学べる社会に
-        </SectionBody>
-        <div style={{maxWidth:'600px',margin:'0 auto'}}>
+      <div className={[styles.fullWidth,styles.topEyecatch].join(' ')}>
+        <figure>
           <Image
             src={eyecatch}
-            alt=""
-            layout="responsive"
-            sizes="100vw"
-            placeholder='blur'
-            style={{ transition: '0.2s' }}
+            alt=''
+            layout='fill'
+            sizes='100vw'
+            //width={1920}
+            //height={800}
+            objectFit='cover'
+            objectPosition='50% 10%'
           />
-          <div style={{backgroundColor:'white',padding:'var(--space-xs)'}}>
-            子どもだけではなく、大人になってからも、自分の個性や才能に合う学びの機会が、いつもあたりまえのように存在している。
-            そのような社会を、私たちは目指していきたいと考えています。
-            私たちの活動が、そのような社会を実現するための小さくとも大きな一歩であると信じています。
-          </div>
-        </div>
-      </Section>
-      <Section fullWidth color='bgImg'>
-        <IconHedding color='blue'>サポーターになる</IconHedding>
+        </figure>
+      </div>
+      <Section>
         <SectionBody>
-          子どもたちの学び場の選択肢を増やすために、皆様のお力をお貸し下さい。
+        <h2 style={{textAlign:'center'}}>「居心地の良い場所」が学びの場となるように</h2>
+          <div style={{marginTop:'calc(var(--space-xs))'}}>
+            <Grid rows='grid2'>
+              <div style={{textAlign:'left',fontSize:'calc(var(--body)*0.9)'}}>
+                私達は子どもたちにとって居心地の良い場所が学びの場所となれるように活動をしています。
+                平日の日中に学校の外で過ごせる学びの場と、学校の中で教室以外の場所で過ごせる学びの場を運営しています。
+              </div>
+              <figure className=''>
+                <Image
+                  src='/assets_03.png'
+                  alt=""
+                  layout="responsive"
+                  sizes="100vw"
+                  width={1500}
+                  height={700}
+                  objectFit='contain'
+                />
+              </figure>
+            </Grid>
+          </div>
         </SectionBody>
-        <Grid rows='grid2'>
-          <Card>
-            皆様からのご支援が子どもたちの笑顔を<br />生み出します。<br />応援をよろしくお願いいたします。
-          </Card>
-          <Card title='スタッフとして支援'>
-            皆様からのご支援が子どもたちの笑顔を<br />生み出します。<br />応援をよろしくお願いいたします。
-          </Card>
-        </Grid>
       </Section>
+      <Section fullWidth>
+        <IconHedding color='blue' borderOff>学校外フリースクール</IconHedding>
+        <div style={{backgroundColor:'var(--white)',padding:'var(--space-xs)',borderRadius:'20px'}}>
+          <Grid rows='grid3'>
+            <Card basicStyle title='安全と安心'>子どもたちが心理的・肉体的に安全が保たれている状況で過ごせることが何よりも大切だと考えています。そのための空間づくり、スタッフの接し方、プログラムづくりを意識しています。</Card>
+            <Card basicStyle title='学び手主体の学習'>学びの主体をいつも子どもたちにおくようにしています。プログラムを準備したとしても、それに必ず参加しなければいけないわけではなく、あくまでも子どもたちの意思による選択を尊重しています。</Card>
+            <Card basicStyle title='自信になる体験'>子どもたちが自らの意思で緒戦したことがらに、成果と過程を通して、子どもたちが自分に自信をつけられる体験ができるように意識をしています。</Card>
+          </Grid>
+        </div>
+        <Button link='/' rightOn>学校関係者の方々へ</Button>
+      </Section>
+      <Section fullWidth color='gray'>
+        <IconHedding color='yellow' borderOff>学校外フリースクール</IconHedding>
+        <Grid rows = 'grid2'>
+          <Describe imgOn radiusOn img='/card_03.JPG'>
+          </Describe>
+          <Describe radiusOn>
+            <div>
+              自分らしく学べる場所<br />
+              すべての子どもたちに、学校や家以外の場所に、
+              自分らしく学べる空間を提供したいという思いで、
+              フリースクールを運営しています。午前中はスタッフの準備したプログラムを
+              通して自分の世界を広げる体験を、午後は自分の好きなことに自由に没頭する時間を設けています。
+            </div>
+          </Describe>
+        </Grid>
+        <div style={{paddingBottom:'var(--space-md)'}}></div>
+        <Grid rows = 'grid2'>
+          <Describe imgOn radiusOn img='/card_08.JPG'>
+          </Describe>
+          <Describe radiusOn>
+            <div>
+              フリースクール概要<br />
+              ・日時：月二回(各月の日程詳細は下記リンク記載)<br />
+              ・内容：午前中プログラム/午後自由時間<br />
+              ・料金：2,000円/日<br />
+              ・持ち物：昼食<br />
+              ・場所：3rdschool吉祥寺校(東京都武蔵野市吉祥寺<br />
+              　　　　本町2-17-2マリオンワンビルB1)<br />
+            </div>
+          </Describe>
+        </Grid>
+        <div style={{paddingBottom:'var(--space-sm)'}}></div>
+        <Button link='/' rightOn>学校関係者の方々へ</Button>
+      </Section>
+      <div style={{paddingBottom:'var(--space-xl)'}}></div>
     </Container>
   )
 }

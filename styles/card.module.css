@@ -1,3 +1,9 @@
+.basic {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
 .card {
   width: 320px;
   margin: calc(var(--space-xs) * 0.5) auto;
@@ -29,10 +35,10 @@
 
 .cardInner {
   padding-top: calc(var(--space-xs));
-  padding-bottom: var(--space-xs);
 }
 .gray {
   background-color: var(--gray-10);
+  padding-bottom: var(--space-xs);
 }
 
 .title {

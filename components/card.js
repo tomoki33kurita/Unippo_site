@@ -2,12 +2,12 @@ import styles from 'styles/card.module.css'
 import Image from 'next/image'
 import Button from 'components/button'
 
-export default function Card({ children, title='寄付による支援', img='/card_01.JPG', innerOn=false }) {
+export default function Card({ children, title='寄付による支援', img='/card_01.JPG', innerOn=false, basicStyle=false}) {
   return (
-    <div className={innerOn ? styles.altCard : styles.card}>
+    <div className={basicStyle ? styles.basic : innerOn ? styles.altCard : styles.card}>
       {innerOn ? '' : <h3 className={styles.title}>{title}</h3>}
       <figure className={innerOn ? styles.altCardImg : styles.cardImg}>
-        {innerOn ?
+        {innerOn||basicStyle  ?
           <Image
             src={img}
             alt=""
@@ -26,9 +26,9 @@ export default function Card({ children, title='寄付による支援', img='/ca
         }
       </figure>
       <div className={[styles.cardInner,innerOn ? styles.gray : ''].join(' ')}>
-        <div className={innerOn ? styles.innerDesctiption : styles.description}>{children}</div>
+        <div className={innerOn || basicStyle ? styles.innerDesctiption : styles.description}>{children}</div>
         {innerOn ? <h3 className={innerOn ? styles.innerTitle : styles.title}>{title}</h3> : ''}
-        {innerOn ? <Button altColor>詳しく見る</Button> : <Button>詳しく見る</Button>}
+        {basicStyle ? '' : innerOn ? <Button altColor>詳しく見る</Button> : <Button>詳しく見る</Button>}
       </div>
     </div>
   )

@@ -20,13 +20,29 @@
 .red {
   background-color: var(--red);
 }
+.gray {
+  background-color: var(--gray-10);
+}
 
 .bgImg {
+  position: relative;
   color: var(--white);
   background-image: url("/bgimg.JPG");
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: 50% 10%;
   background-size: cover;
+  z-index: -20;
+
+}
+.bgImg::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.3);
+  z-index: -10;
 }
 
 .inner {

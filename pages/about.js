@@ -5,7 +5,7 @@ import Section from 'components/section'
 import SectionBody from 'components/section-body'
 import IconHedding from 'components/icon-hedding'
 import Image from 'next/image'
-import eyecatch from 'images/testimg_001.png'
+import eyecatch from 'public/bgimg.JPG'
 import styles from 'styles/index.module.css'
 import Button from 'components/button'
 import Grid from 'components/grid'
@@ -16,21 +16,38 @@ import Describe from 'components/describe'
 export default function About() {
   return (
     <Container>
-      <figure className={styles.fullWidth}>
-        <Image
-          src={eyecatch}
-          alt=""
-          layout="responsive"
-          sizes="100vw"
-          placeholder='blur'
-          style={{ transition: '0.2s' }}
-        />
-      </figure>
+      <div className={[styles.fullWidth,styles.topEyecatch].join(' ')}>
+        <figure>
+          <Image
+            src={eyecatch}
+            alt=''
+            layout='fill'
+            sizes='100vw'
+            //width={1920}
+            //height={800}
+            objectFit='cover'
+            objectPosition='50% 20%'
+          />
+        </figure>
+      </div>
       <Section>
-        <Grid rows='grid2'>
-          <h2>すべての子どもたちが<br />自分らしい一歩を<br />踏み出せるように</h2>
-        </Grid>
         <SectionBody>
+          <div style={{marginBottom:'calc(var(--space-xs)*0.7)'}}>
+            <Grid rows='grid2'>
+              <h2 style={{textAlign:'left'}}>すべての子どもたちが<br />自分らしい一歩を<br />踏み出せるように</h2>
+              <figure className=''>
+                <Image
+                  src='/assets_04.png'
+                  alt=""
+                  layout="responsive"
+                  sizes="100vw"
+                  width={300}
+                  height={120}
+                  objectFit='contain'
+                />
+              </figure>
+            </Grid>
+          </div>
           私たちは学校に行きたくない子どもたちに、居心地の良い学びの場を提供する活動をしています。たとえ学校の学びのスタイルが合わなくても、誰もが自分らしく学び、成長していくことができるように。Unippoという名前には「子どもたちにユニークな一歩を踏み出してほしい」という願いが込められています。
         </SectionBody>
       </Section>
@@ -40,7 +57,7 @@ export default function About() {
           学校に行きたくない子たちの学び場の選択肢の不足
         </SectionBody>
         <Grid rows = 'grid2'>
-          <Describe imgOn img='/testimg_001.png' radiusOn>
+          <Describe imgOn img='/card_03.JPG' radiusOn>
           </Describe>
           <Describe radiusOn>
             <div>
@@ -54,14 +71,14 @@ export default function About() {
       </Section>
       <Section>
         <Grid rows = 'grid2'>
-          <Describe imgOn img='/testimg_001.png'>
+          <Describe imgOn img='/data_01.png'>
           </Describe>
           <Describe>
-            <div>
-              本当は学校に行きたい<br />
-              様々な事情により、学校に行きたくてもいけない子どもたちがたくさんいます。<br />
-              しかし、学校の教室以外の学びの選択肢が不足している現状があります。<br />
-              学校に行けないことで、学びと成長の機会が損なわれてしまうことは、子どもたちの将来に大きな影響を及ぼすことになります。<br />
+            <div style={{textAlign:'left'}}>
+              不登校時は全国で24万人<br />
+              日本では近年、全国的に不登校の子どもの数が増加傾向にあります。
+              その中でも特に小学生の増加率が著しく、その人数は10年前の約3倍にもなります。
+              このことからも今後、学校の教室以外の学びの場の重要性は増々高まっていくと考えられます。
             </div>
           </Describe>
         </Grid>
@@ -72,7 +89,7 @@ export default function About() {
           学校に行きたくない子たちの学び場の選択肢の不足
         </SectionBody>
         <Grid rows = 'grid2'>
-          <Describe imgOn img='/testimg_001.png' radiusOn>
+          <Describe imgOn img='/card_04.JPG' radiusOn>
           </Describe>
           <Describe radiusOn>
             <div>
@@ -86,14 +103,14 @@ export default function About() {
       </Section>
       <Section>
         <Grid rows = 'grid2'>
-          <Describe imgOn img='/testimg_001.png'>
+          <Describe imgOn img='/data_02.png'>
           </Describe>
           <Describe>
-            <div>
-              本当は学校に行きたい<br />
-              様々な事情により、学校に行きたくてもいけない子どもたちがたくさんいます。<br />
-              しかし、学校の教室以外の学びの選択肢が不足している現状があります。<br />
-              学校に行けないことで、学びと成長の機会が損なわれてしまうことは、子どもたちの将来に大きな影響を及ぼすことになります。<br />
+            <div style={{textAlign:'left'}}>
+              子どもたちを取り巻く不安<br />
+              学校に行きたくなくなってしまう要因の中でもっとも割合の高いものは、
+              本人たちの不安や無気力によるものです。彼らにとって必要なものは
+              安心・安全の確保された居心地の良い場所なのではないでしょうか。
             </div>
           </Describe>
         </Grid>
@@ -104,14 +121,15 @@ export default function About() {
           誰もが自分らしく学べる社会に
         </SectionBody>
         <div style={{maxWidth:'600px',margin:'0 auto'}}>
-          <Image
-            src={eyecatch}
-            alt=""
-            layout="responsive"
-            sizes="100vw"
-            placeholder='blur'
-            style={{ transition: '0.2s' }}
-          />
+          <figure style={{width:'100%',height:'200px',position:'relative'}}>
+            <Image
+              src='/card_05.JPG'
+              alt=""
+              layout='fill'
+              objectFit='cover'
+              objectPosition='top'
+            />
+          </figure>
           <div style={{backgroundColor:'white',padding:'var(--space-xs)'}}>
             子どもだけではなく、大人になってからも、自分の個性や才能に合う学びの機会が、いつもあたりまえのように存在している。
             そのような社会を、私たちは目指していきたいと考えています。
@@ -120,15 +138,15 @@ export default function About() {
         </div>
       </Section>
       <Section fullWidth color='bgImg'>
-        <IconHedding color='blue'>サポーターになる</IconHedding>
-        <SectionBody>
+        <IconHedding color='blue' borderOff>サポーターになる</IconHedding>
+        <p style={{textAlign: 'center',marginBottom: 'var(--space-xs)',fontWeight: '300'}}>
           子どもたちの学び場の選択肢を増やすために、皆様のお力をお貸し下さい。
-        </SectionBody>
+        </p>
         <Grid rows='grid2'>
-          <Card>
+          <Card img='/assets_06.png'>
             皆様からのご支援が子どもたちの笑顔を<br />生み出します。<br />応援をよろしくお願いいたします。
           </Card>
-          <Card title='スタッフとして支援'>
+          <Card title='スタッフとして支援' img='/assets_05.png'>
             皆様からのご支援が子どもたちの笑顔を<br />生み出します。<br />応援をよろしくお願いいたします。
           </Card>
         </Grid>

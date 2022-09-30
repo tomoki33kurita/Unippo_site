@@ -5,12 +5,25 @@ export default function Describe({ children, imgOn = false, img = '/eyecatch_001
   if(imgOn){
     return (
       <div className={[styles.imgBox, radiusOn && styles.leftRadius].join(" ")}>
-        <Image
-          src={img}
-          alt=""
-          layout='fill'
-          objectFit='cover'
-        />
+        <figure>
+        {radiusOn ?
+          <Image
+            src={img}
+            alt=""
+            layout='fill'
+            objectFit='cover'
+          /> :
+          <Image
+            src={img}
+            alt=""
+            layout="responsive"
+            sizes="100vw"
+            width={1800}
+            height={1400}
+            objectFit='contain'
+          />
+        }
+      </figure>
       </div>
     )
   }else {

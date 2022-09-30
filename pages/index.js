@@ -15,24 +15,26 @@ import Card from 'components/card'
 export default function Home() {
   return (
     <Container>
-      <figure className={styles.fullWidth}>
-        <Image
-          src={eyecatch}
-          alt=""
-          layout="responsive"
-          sizes="100vw"
-          height={700}
-          objectFit='cover'
-          placeholder='blur'
-          style={{ transition: '0.2s' }}
-        />
-      </figure>
+      <div className={[styles.fullWidth,styles.topEyecatch].join(' ')}>
+        <figure className={styles.fullWidth}>
+          <Image
+            src={eyecatch}
+            alt=''
+            layout='fill'
+            sizes='100vw'
+            //width={1920}
+            //height={800}
+            objectFit='cover'
+            objectPosition='50% 50%'
+          />
+        </figure>
+      </div>
       <Section>
         <IconHedding color='yellow'>私たちについて</IconHedding>
         <SectionBody>
           私たちは学校に行きたくない子どもたちに、居心地の良い学びの場を提供する活動をしています。たとえ学校の学びのスタイルが合わなくても、誰もが自分らしく学び、成長していくことができる社会を目指しています。
         </SectionBody>
-        <Button large>Unippoとは</Button>
+        <Button link='/about' large>Unippoとは</Button>
       </Section>
       <Section fullWidth>
         <IconHedding color='blue'>お知らせ</IconHedding>
@@ -75,12 +77,12 @@ export default function Home() {
         </div>
       </Section>
       <Section fullWidth color='bgImg'>
-        <IconHedding color='blue'>サポーターになる</IconHedding>
-        <p style={{textAlign: 'center'}}>
+        <IconHedding color='blue' borderOff>サポーターになる</IconHedding>
+        <p style={{textAlign: 'center',marginBottom: 'var(--space-xs)',fontWeight: '300'}}>
           子どもたちの学び場の選択肢を増やすために、皆様のお力をお貸し下さい。
         </p>
         <Grid rows='grid2'>
-          <Card img='/assets_01.png'>
+          <Card img='/assets_06.png'>
             皆様からのご支援が子どもたちの笑顔を<br />生み出します。<br />応援をよろしくお願いいたします。
           </Card>
           <Card title='スタッフとして支援' img='/assets_05.png'>
@@ -88,6 +90,7 @@ export default function Home() {
           </Card>
         </Grid>
       </Section>
+      {/*
       <Section>
         <IconHedding color='yellow'>私たちも応援しています</IconHedding>
         <Grid rows='grid4'>
@@ -100,6 +103,7 @@ export default function Home() {
           <Button rightOn>応援メッセージを見る</Button>
         </div>
       </Section>
+      */}
     </Container>
   )
 }
