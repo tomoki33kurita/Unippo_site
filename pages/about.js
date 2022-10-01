@@ -123,22 +123,17 @@ export default function About() {
         <SectionBody centerOn color='yellow'>
           誰もが自分らしく<br className={styles.brMb} />学べる社会に
         </SectionBody>
-        <div style={{maxWidth:'600px',margin:'0 auto'}}>
-          <figure style={{width:'100%',height:'200px',position:'relative'}}>
-            <Image
-              src='/card_05.JPG'
-              alt=""
-              layout='fill'
-              objectFit='cover'
-              objectPosition='top'
-            />
-          </figure>
-          <div style={{backgroundColor:'white',padding:'var(--space-xs)'}}>
+        <Grid rows = 'grid2'>
+          <Describe imgOn img='/card_05.JPG' radiusOn>
+          </Describe>
+          <Describe radiusOn>
+            <div>
             子どもだけではなく、大人になってからも、自分の個性や才能に合う学びの機会が、いつもあたりまえのように存在している。
             そのような社会を、私たちは目指していきたいと考えています。
             私たちの活動が、そのような社会を実現するための小さくとも大きな一歩であると信じています。
-          </div>
-        </div>
+            </div>
+          </Describe>
+        </Grid>
       </Section>
       <Section fullWidth color='bgImg'>
         <IconHedding color='blue' borderOff>サポーターになる</IconHedding>
