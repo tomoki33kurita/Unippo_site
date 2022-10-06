@@ -11,6 +11,7 @@ import Button from 'components/button'
 import Grid from 'components/grid'
 import Box from 'components/box'
 import Card from 'components/card'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -39,7 +40,7 @@ export default function Home() {
       <Section fullWidth>
         <IconHedding color='blue'>お知らせ</IconHedding>
         <Grid rows = 'grid4' gap='var(--space-xs)'>
-          <Box flagOn img='/card_10.JPG'>【イベント開催】7/14(木)開催！教室開放「すきなことをシェアしよう」</Box>
+          <Link href='/blog/accessory'><a><Box flagOn img='/card_10.JPG'>レジンでアクセサリーづくり【平日日中の居場所】</Box></a></Link>
           <Box flagOn img='/card_09.JPG'>【イベント開催】7/14(木)開催！教室開放「すきなことをシェアしよう」</Box>
           <Box flagOn img='/card_08.JPG'>【イベント開催】7/14(木)開催！教室開放「すきなことをシェアしよう」</Box>
           <Box flagOn img='/card_07.JPG'>【イベント開催】7/14(木)開催！教室開放「すきなことをシェアしよう」</Box>

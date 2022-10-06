@@ -27,4 +27,7 @@
     max-width: 320px;
 
   }
+  .grid3, .grid4 {
+    margin-bottom: var(--space-xs);
+  }
 }
